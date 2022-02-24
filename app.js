@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 const exphbs = require('express-handlebars')
 const cookieParser = require('cookie-parser')
 
+
 dotenv.config({path: './config/config.env'});
 
 const app = express();
@@ -39,6 +40,7 @@ app.engine(
 app.set("view engine", ".hbs");
 
 app.use(cookieParser())
+
 
 
 
