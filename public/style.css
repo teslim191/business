@@ -65,6 +65,7 @@ body {
   color: var(--black);
   font-size: 16px;
 }
+
 @media (max-width: 991px) {
   body {
     font-size: 14px;
@@ -348,8 +349,8 @@ p {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 15px;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  color: rgb(146, 146, 253);
+  border: 2px solid rgb(146, 146, 253);
   border-radius: 30px;
   padding: 8px 30px;
 }
@@ -399,7 +400,7 @@ p {
 
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
-  background: var(--primary);
+  background: #0A66C2;
   padding: 10px 0;
   position: absolute;
   left: 0;
@@ -911,7 +912,7 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(--primary);
+  background: #0A66C2;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight {
@@ -1083,10 +1084,10 @@ p {
   }
 }
 .about-five-content .about-five-tab nav button:hover {
-  color: var(--primary);
+  color: rgb(146, 146, 253);
 }
 .about-five-content .about-five-tab nav button.active {
-  background-color: var(--primary);
+  background-color: rgb(146, 146, 253);
   color: var(--white);
 }
 .about-five-content .about-five-tab nav button:last-child {
@@ -1193,11 +1194,11 @@ p {
   border-radius: 50%;
   margin-bottom: 25px;
   background: var(--white);
-  border: 2px solid var(--primary);
+  border: 2px solid rgb(146, 146, 253);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: rgb(146, 146, 253);
   font-size: 40px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1430,7 +1431,7 @@ p {
 .call-action {
   z-index: 2;
   padding: 100px 0;
-  background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+  background: #0A66C2;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
