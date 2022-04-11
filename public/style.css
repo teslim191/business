@@ -1075,12 +1075,12 @@ p {
 }
 @media (max-width: 767px) {
   .about-five-content .about-five-tab nav button {
-    margin: 0;
+    margin: 10px;
     margin-bottom: 10px;
     width: 100%;
   }
   .about-five-content .about-five-tab nav button:last-child {
-    margin: 0;
+    margin: 10px;
   }
 }
 .about-five-content .about-five-tab nav button:hover {
@@ -1091,7 +1091,7 @@ p {
   color: var(--white);
 }
 .about-five-content .about-five-tab nav button:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 .about-five-content .about-five-tab .tab-content {
   border: none;
@@ -1101,7 +1101,7 @@ p {
   margin-bottom: 20px;
 }
 .about-five-content .about-five-tab .tab-content p:last-child {
-  margin: 0;
+  margin: 10px;
 }
 
 .about-image-five {

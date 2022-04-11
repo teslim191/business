@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json())
 
 // database connection
-connectDB()
+// connectDB()
 
 
 
