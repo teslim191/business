@@ -1906,3 +1906,8 @@ p {
   color: var(--white);
   background-color: var(--primary-dark);
 }
+
+
+.navbar-expand-lg {
+  margin-bottom: 0;
+}
