@@ -29,7 +29,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/reboic-logo-dark.svg" alt="Logo" /></a>
+        <a href="/"><img src="assets/images/reboic-logo-dark.svg" alt="Logo" /></a>
       </div>
       <p class="text">We don’t just find IT solutions—we craft them for you</p>
       <!-- logo -->
@@ -79,9 +79,9 @@
               We don’t just find IT solutions—we craft them for you
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
-                class="glightbox video-button">
+              <a href="#contact" class="btn primary-btn">Get Started</a>
+              <a href="#"
+                class="video-button">
                 <span class="btn icon-btn rounded-full">
                   <i class="lni lni-play"></i>
                 </span>
@@ -676,7 +676,7 @@
                   </div>
                   <div class="contact-content">
                     <h4>Schedule</h4>
-                    <p>24 Hours / 7 Days Open</p>
+                    <p>10 Hours / 5 Days Open</p>
                     <p>Office time: 10 AM - 5:30 PM</p>
                   </div>
                 </div>
@@ -699,21 +699,22 @@
                 </div>
               </div>
             </div>
-            <form action="#" class="contact-form">
+            <form action="/contact" class="contact-form" method="POST">
+            {{> message}}
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" name="name" id="name" placeholder="Name" required />
+                  <input type="text" name="name" id="name" placeholder="Name"/>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" name="email" id="email" placeholder="Email" required />
+                  <input type="email" name="email" id="email" placeholder="Email"/>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" name="phone" id="phone" placeholder="Phone" required />
+                  <input type="text" name="phone" id="phone" placeholder="Phone"/>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="subject" id="email" placeholder="Subject" required />
+                  <input type="text" name="subject" id="email" placeholder="Subject" />
                 </div>
               </div>
               <div class="row">
@@ -739,13 +740,13 @@
   <!-- ========================= contact-section end ========================= -->
 
   <!-- ========================= map-section end ========================= -->
-  <section class="map-section map-style-9">
+  {{!-- <section class="map-section map-style-9">
     <div class="map-container">
       <object style="border:0; height: 500px; width: 100%;"
         data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
     </div>
     </div>
-  </section>
+  </section> --}}
   <!-- ========================= map-section end ========================= -->
 
 
@@ -798,16 +799,6 @@
       sidebarLeft.classList.add("open");
       overlayLeft.classList.add("open");
     });
-
-    //========= glightbox
-    GLightbox({
-      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
-      'type': 'video',
-      'source': 'youtube', //vimeo, youtube or local
-      'width': 900,
-      'autoplayVideos': true,
-    });
-
   </script>
 </body>
 

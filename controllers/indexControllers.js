@@ -1,4 +1,6 @@
-const User = require("../models/User");
+const User = require("../models/User")
+const Contact = require("../models/Contact")
+const Subscribe = require("../models/Subscribe")
 // require the jsonwebtoken
 const jwt = require("jsonwebtoken");
 
@@ -90,4 +92,38 @@ module.exports = {
     res.cookie("jwt", "", { maxAge: 1 });
     res.redirect("/login");
   },
+  contact: async (req, res) => {
+    const { name, email, phone, subject, message } = req.body;
+    try {
+      let contact = await Contact.create({
+        name,
+        email,
+        phone,
+        subject,
+        message,
+      });
+       req.flash("success_msg", "message sent successfully");
+      res.redirect("/");
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  subscribe: async (req, res) => {
+    const {email} = req.body
+    try {
+      let subscribe = await Subscribe.findOne({email})
+      if (subscribe) {
+        req.flash('error', 'subscribed already')
+        res.redirect('/')                                 
+      }
+      else{
+        await Subscribe.create({email})
+        req.flash('success', 'You have subscribed to our mailing list')
+        res.redirect('/')
+      }   xs
+    } catch (error) {
+      console.log(error)
+      
+    }
+  }
 };
