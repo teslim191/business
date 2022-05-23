@@ -39,7 +39,7 @@ const handleError = (err) => {
 const maxAge = 3 * 24 * 60 * 60;
 
 const createToken = (id) => {
-  return jwt.sign({ id }, "xyz", {
+  return jwt.sign({ id }, process.env.TOKEN, {
     expiresIn: maxAge,
   });
 };
@@ -120,7 +120,7 @@ module.exports = {
         await Subscribe.create({email})
         req.flash('success', 'You have subscribed to our mailing list')
         res.redirect('/')
-      }   xs
+      }   
     } catch (error) {
       console.log(error)
       

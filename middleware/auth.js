@@ -7,7 +7,7 @@ module.exports = {
         // check if token exists
         if (token) {
             // if token exist verify token
-            jwt.verify(token, 'xyz', (err, decodedToken) => {
+            jwt.verify(token, process.env.TOKEN, (err, decodedToken) => {
                 if (err) {
                     console.log(err)
                     res.redirect('/login')
@@ -29,7 +29,7 @@ module.exports = {
         // check if token exist
         if (token) {
         // verify token
-        jwt.verify(token,'xyz', async (err, decodedToken) => {
+        jwt.verify(token,process.env.TOKEN, async (err, decodedToken) => {
             if (err) {
                 res.locals.user = null
                 next()
