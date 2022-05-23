@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser')
 const session = require('express-session')
 
 
-dotenv.config({path: './config/config.env'});
+dotenv.config({path:'./config.env'});
 
 const app = express();
 
